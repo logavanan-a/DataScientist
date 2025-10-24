@@ -1,0 +1,12 @@
+Diabetes dataset: LightGBM vs XGBoost comparison
+Rows: 768  Columns: 9
+
+Comparative metrics (on test set):
+              accuracy  precision    recall        f1   roc_auc
+LGB_baseline  0.740260   0.652174  0.555556  0.600000  0.817407
+XGB_baseline  0.733766   0.622642  0.611111  0.616822  0.805185
+LGB_tuned     0.772727   0.693878  0.629630  0.660194  0.822407
+XGB_tuned     0.753247   0.660000  0.611111  0.634615  0.827407
+
+Best LGB params: {'clf__learning_rate': 0.05, 'clf__n_estimators': 100, 'clf__num_leaves': 15}
+Best XGB params: {'clf__learning_rate': 0.05, 'clf__max_depth': 3, 'clf__n_estimators': 100}
